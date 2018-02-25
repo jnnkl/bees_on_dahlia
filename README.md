@@ -1,4 +1,6 @@
 # bees_on_dahlia
+This reprository goes along with the post (https://towardsdatascience.com/how-to-use-deep-learning-to-quantify-pollinator-behavior-i-5fc8000a9bde).
+
 
 How to use deep-learning to quantify pollinator behavior I
 In the last years there has been quite some fuzz in the news about two seemingly unrelated topics: the decrease of bees and other pollinators and, simultaneously, the increase of artificial intelligence and data science. Reading up a bit on pollination and how research on pollination works I realized that although a lot is known, there is, as in all sciences, way more unknown. This triggered my curiosity, wouldn’t it be possible to use AI for the study of pollinators? In this post I explain a simple way to do so. I wrote some code, which can be found om my github. (https://github.com/jnnkl/bees_on_dahlia). But as a teaser: I wanted to quantify the number of visitations to the flowers in this movie. 
@@ -19,4 +21,7 @@ https://www.youtube.com/watch?v=s1woB_7bF6E&t=87s
 
 Quantifying the results and some discussion
 So now I got a nice visualization, that is not really quantifying let’s look at some plots. In this plots flower 1 is the flower in the left upper corner, and flower 2 is the large flower that is only half visible.
+
+(plots on https://towardsdatascience.com/how-to-use-deep-learning-to-quantify-pollinator-behavior-i-5fc8000a9bde)
+
 They show that the larger flower gets more visits and the intervals between the visits seems to be smaller. Of course this short measurement does not support any serious claims about pollinator behavior but that is not what I was after. The goal of this experiment was to show that deep learning techniques can help to study pollination behavior, also in a quantitative way. Of course this could also have been done in a classical way of image analysis. Probably, one could relatively easily come up with an algorithm that would recognize insect visitation on these dahlia flowers automatically. However, they do not generalize to other flowers. I checked if this network worked for time-lapses of other flowers as well. I would have been lucky if that was the case, and indeed I had to conclude that this network works for this flowers only. Other flowers are often way more diverse in there structure then this particular dahlia, and to get a network detecting insects on all kind of flowers is actually quite tricky. So how to get a good insect detection network for other flowers and more backgrounds will be a topic of later post.
